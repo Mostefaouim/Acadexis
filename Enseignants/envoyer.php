@@ -85,8 +85,6 @@ $html_content = "
         th { background-color: #f4f4f4; color: #333; }
         h1, h2 { color: #004085; }
         p { font-size: 14px; margin: 5px 0; }
-        .summary { margin: 20px 0; font-size: 16px; }
-        .summary strong { color: #004085; }
     </style>
 </head>
 <body>
