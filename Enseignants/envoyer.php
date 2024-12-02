@@ -109,7 +109,6 @@ $html_content .= "
 </body>
 </html>";
 
-// Envoi des emails
 $mail = new PHPMailer(true);
 try {
     $mail->isSMTP();
@@ -130,7 +129,7 @@ try {
         $mail->send();
         $mail->clearAddresses();
     }
-    echo "Emails envoyés avec succès.";
+    echo "<font color='green'>Emails envoyés avec succès.</font>";
 } catch (Exception $e) {
-    echo "Erreur lors de l'envoi des emails : {$mail->ErrorInfo}";
+    echo "<font color='red'>Erreur lors de l'envoi des emails : {$mail->ErrorInfo}</font>";
 }
