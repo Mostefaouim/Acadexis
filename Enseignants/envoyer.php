@@ -104,9 +104,9 @@ foreach ($etudiants_data as $etudiant) {
 
 $html_content .= "
     </table>
-            <strong>Moyenne Globale: $moyenne_globale</strong><br>
-            <strong>Moyenne Max : $moyenne_max</strong><br>
-            <strong>Moyenne Min : $moyenne_min</strong><br>
+            <p><strong>Moyenne Globale: $moyenne_globale</strong><br></p>
+            <p><strong>Moyenne Max : $moyenne_max</strong><br></p>
+            <p><strong>Moyenne Min : $moyenne_min</strong><br></p>
         
 </body>
 </html>";
