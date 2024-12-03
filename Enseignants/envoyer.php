@@ -23,6 +23,8 @@ $filiere_data = mysqli_fetch_assoc($filiere_query);
 $nom_filiere = $filiere_data['nom_filiere'] ?? 'Inconnu';
 
 $etudiant_query = mysqli_query($conn, "SELECT id, email, Nom_pre FROM personne WHERE filiere_id = $filiere");
+$enseignat = mysqli_query($conn, "SELECT email, nom_prenom FROM enseignants ");
+$enseignat_qyery = mysqli_fetch_assoc($enseignat);
 $etudiants = [];
 while ($row = mysqli_fetch_assoc($etudiant_query)) {
     $etudiants[] = $row;
@@ -124,7 +126,7 @@ try {
     $mail->isHTML(true);
 
     foreach ($etudiants as $etudiant) {
-        $mail->addAddress($etudiant['email'], $etudiant['Nom_pre']);
+        $mail->addAddress($enseignat_qyery['email'], $enseignat_qyery['nom_prenom']);
         $mail->Body = $html_content;
         $mail->send();
         $mail->clearAddresses();
