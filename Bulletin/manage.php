@@ -159,7 +159,7 @@ if (isset($_POST['enregistrer'])) {
 
             $save_result = mysqli_query($conn, $save_sql);
             if ($save_result) {
-                echo "Note enregistrée avec succès.";
+                echo "<br><font color='green'>Note enregistrée avec succès.</font>";
                 //header('location: index.php');
             } else {
                 echo "Erreur lors de l'enregistrement de la note.";
