@@ -1,6 +1,7 @@
 {
     "require": {
         "phpmailer/phpmailer": "^6.9",
-        "knplabs/knp-snappy": "^1.5"
+        "knplabs/knp-snappy": "^1.5",
+        "altorouter/altorouter": "^2.0"
     }
 }
