@@ -157,8 +157,8 @@ if (isset($_POST['mailer'])) {
 
         $mail->Body = $html_content;
         $mail->send();
-        echo "L'e-mail a été envoyé avec succès à $email.";
+        echo "<font color='green'>L'e-mail a été envoyé avec succès à <strong>$email.</strong></font>";
     } catch (Exception $e) {
-        echo "L'e-mail n'a pas pu être envoyé. Erreur : {$mail->ErrorInfo}";
+        echo "<font color='red'>L'e-mail n'a pas pu être envoyé. Erreur : {$mail->ErrorInfo}</font>";
     }
 }
