@@ -53,5 +53,4 @@ if (!isset($_SESSION['user']) || $_SESSION['role'] !== 'admin') {
     </div>
     <center><a href="users/logout.php" style="margin-top: 20px;">Deconnecter</a></center>
 </body>
-
 </html>
