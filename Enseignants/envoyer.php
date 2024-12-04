@@ -23,9 +23,13 @@ $filiere_data = mysqli_fetch_assoc($filiere_query);
 $nom_filiere = $filiere_data['nom_filiere'] ?? 'Inconnu';
 
 $etudiant_query = mysqli_query($conn, "SELECT id, email, Nom_pre FROM personne WHERE filiere_id = $filiere");
-$enseignat = mysqli_query($conn, "SELECT email, nom_prenom FROM enseignants ");
-$enseignat_qyery = mysqli_fetch_assoc($enseignat);
+$enseignat = mysqli_query($conn, "SELECT email, nom_prenom FROM enseignants");
+// $enseignat_qyery = mysqli_fetch_assoc($enseignat);
 $etudiants = [];
+$enseignats = [];
+while ($row1 = mysqli_fetch_assoc($enseignat)) {
+    $enseignats[] = $row1['email'];
+}
 while ($row = mysqli_fetch_assoc($etudiant_query)) {
     $etudiants[] = $row;
 }
@@ -121,12 +125,12 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
-    $mail->setFrom('mostefaoui748@gmail.com', 'Administration');
+    $mail->setFrom('mostefaoui748@gmail.com', 'Mostefaoui Mohammed');
     $mail->Subject = "PV Global - Filiere $nom_filiere";
     $mail->isHTML(true);
 
-    foreach ($etudiants as $etudiant) {
-        $mail->addAddress($enseignat_qyery['email'], $enseignat_qyery['nom_prenom']);
+    foreach ($enseignats as $ens) {
+        $mail->addAddress($ens);
         $mail->Body = $html_content;
         $mail->send();
         $mail->clearAddresses();
