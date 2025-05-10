@@ -1,0 +1,4 @@
+# Ignore the image folder
+image/
+vendor/
+# Ignore the build folder

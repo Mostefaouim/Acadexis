@@ -101,13 +101,6 @@ CREATE TABLE `nationalité` (
 -- Dumping data for table `nationalité`
 --
 
-INSERT INTO `nationalité` (`id`, `code`, `nationalite`) VALUES
-(1, 'DZ', 'Algeria'),
-(3, 'B', 'Belgique'),
-(4, 'FR', 'France'),
-(5, 'CA', 'Canada'),
-(6, 'US', 'États-Unis');
-
 -- --------------------------------------------------------
 
 --
