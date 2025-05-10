@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost", "root", "", "edusys");
+$conn = mysqli_connect("localhost", "root", "", "acadexis ");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }

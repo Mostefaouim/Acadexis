@@ -1,8 +1,8 @@
-# 🎓 EduSys
+# 🎓 Acadexis
 
 ## 📌 Overview
 
-**EduSys** is a web-based school management system developed in PHP. It facilitates the administration of educational institutions by providing tools to manage students, teachers, courses, grades, and more.
+**Acadexis ** is a web-based school management system developed in PHP. It facilitates the administration of educational institutions by providing tools to manage students, teachers, courses, grades, and more.
 
 > **Note:** The application's interface and messages are primarily in French.
 
@@ -24,7 +24,7 @@
 
 - **Backend:** PHP
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** MySQL (db name : edusys)
+- **Database:** MySQL (db name : acadexis )
 - **Additional Tools:** Composer for dependency management
 
 ---
@@ -32,31 +32,36 @@
 ## 🚀 Getting Started
 
 1. **Clone the Repository:**
+
    ```bash
-   git clone https://github.com/Mostefaouim/EduSys.git
+   git clone https://github.com/Mostefaouim/Acadexis.git
    ```
 
 2. **Navigate to the Project Directory:**
+
    ```bash
-   cd EduSys
+   cd Acadexis
    ```
 
 3. **Install Dependencies:**
    Ensure you have Composer installed, then run:
+
    ```bash
    composer install
    ```
 
 4. **Set Up the Database:**
+
    - Create a MySQL database.
    - Import the provided SQL file located in the `database` folder.
 
 5. **Configure the Application:**
+
    - Update the `config.php` file with your database credentials.
 
 6. **Run the Application:**
    - Start your local server (e.g., XAMPP or WAMP).
-   - Access the application in your browser at `http://localhost/EduSys`.
+   - Access the application in your browser at `http://localhost/Acadexis `.
 
 ---
 
