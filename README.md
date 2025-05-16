@@ -94,4 +94,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-For any inquiries or support, please contact [Mostefaoui M.](mohammedmostefaoui2@gmail.com).
+For any inquiries or support, please contact [Mostefaoui M.]Mostefaouim).
