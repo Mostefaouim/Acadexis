@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-**Acadexis ** is a web-based school management system developed in PHP. It facilitates the administration of educational institutions by providing tools to manage students, teachers, courses, grades, and more.
+**Acadexis** is a web-based school management system developed in PHP. It facilitates the administration of educational institutions by providing tools to manage students, teachers, courses, grades, and more.
 
 > **Note:** The application's interface and messages are primarily in French.
 
